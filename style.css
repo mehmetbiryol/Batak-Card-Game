@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: url(img/free-casino-table-cloth-texture-1637741.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.player-hand-container {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+.player-hand {
+    width: 690px;
+    height: 120px;
+    display: flex;
+    position: relative;
+}
+.player-hand > div {
+    width: 90px;
+    height: 120px;
+    position: absolute;
+}
+.player-hand div:nth-child(2) {
+    left: 50px;
+}
+.player-hand div:nth-child(3) {
+    left: 100px;
+}
+.player-hand div:nth-child(4) {
+    left: 150px;
+}
+.player-hand div:nth-child(5) {
+    left: 200px;
+}
+.player-hand div:nth-child(6) {
+    left: 250px;
+}
+.player-hand div:nth-child(7) {
+    left: 300px;
+}
+.player-hand div:nth-child(8) {
+    left: 350px;
+}
+.player-hand div:nth-child(9) {
+    left: 400px;
+}
+.player-hand div:nth-child(10) {
+    left: 450px;
+}
+.player-hand div:nth-child(11) {
+    left: 500px;
+}
+.player-hand div:nth-child(12) {
+    left: 550px;
+}
+.player-hand div:nth-child(13) {
+    left: 600px;
+}
+.computer1-hand-container,
+.computer2-hand-container,
+.computer3-hand-container {
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.computer1-hand,
+.computer2-hand,
+.computer3-hand {
+    position: relative;
+    width: 80px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.computer1-hand-container {
+    right: 0;
+}
+.computer2-hand-container {
+    top: 80px;
+    height: 100vw;
+    transform: rotateZ(-90deg);
+    transform-origin: top left;
+}
+.computer3-hand-container {
+    left: 0;
+}
+.computer1-hand > div,
+.computer2-hand > div,
+.computer3-hand > div
+ {
+    height: 60px;
+    width: 80px;
+    background: url(img/Cards/card-back.svg);
+    background-size:80px 60px;
+}
+.ground-cards {
+    position: absolute;
+    height: 120px;
+    width: 210px;
+    top: 50%;
+    left: 50%;
+    margin-left: -105px;
+    margin-top: -60px;
+}
+.ground-cards > div {
+    width: 90px;
+    height: 120px;
+    position: absolute;
+}
+.ground-cards div:nth-of-type(2) {
+    left: 50px;
+}
+.ground-cards div:nth-of-type(3) {
+    left: 100px;
+}
+.ground-cards div:nth-of-type(4) {
+    left: 150px;
+}
+.player-result-container,
+.comp1-result-container,
+.comp2-result-container,
+.comp3-result-container {
+    position: absolute;
+    border: 1px solid white;
+    color: white;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+}
+.player-result-container {
+    bottom: 125px;
+    left: calc(50vw - 25px);
+}
+.comp1-result-container {
+    right: 85px;
+    top: calc(50vh - 15px);
+}
+.comp2-result-container {
+    top: 85px;
+    left: calc(50vw - 25px);
+}
+.comp3-result-container {
+    left: 85px;
+    top: calc(50vh - 15px);
+}
+.total-result-screen {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/free-casino-table-cloth-texture-1637741.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+    place-items: center;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.total-results {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+    align-items: center;
+}
+.total-results-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4%;
+    padding: 20px;
+}
+.total-player,
+.total-comp1,
+.total-comp2,
+.total-comp3 {
+    width: 22%;
+    height: 50%;
+}
+.total-results h3 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 30px;
+    position: relative;
+}
+.total-results h3::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+.total-results p {
+    font-size: 48px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+#again-btn {
+    width: 15%;
+    height: 15%;
+    border: none;
+    margin-bottom: 20px;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 5px;
+}
